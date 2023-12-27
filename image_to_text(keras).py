@@ -3,7 +3,7 @@ import keras_ocr
 pipeline = keras_ocr.pipeline.Pipeline()
 
 images = [
-    keras_ocr.tools.read(img) for img in ['images/test2.png']
+    keras_ocr.tools.read(img) for img in ['images/work2.jpg']
 ]
 
 prediction_groups = pipeline.recognize(images)
