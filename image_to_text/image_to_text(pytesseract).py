@@ -3,7 +3,7 @@ from PIL import Image
 import numpy as np
 import cv2
 
-pytesseract.pytesseract.tesseract_cmd = r'C:\\Users\\ANIKET INAMDAR\\AppData\\Local\\Programs\\Tesseract-OCR\\tesseract.exe'
+pytesseract.pytesseract.tesseract_cmd = r'tesseract\\Tesseract-OCR\\tesseract.exe'
 
 def pytesseract_ocr(img):
     text = pytesseract.image_to_string(img) 

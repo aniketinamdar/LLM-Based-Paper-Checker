@@ -1,7 +1,7 @@
 import cv2
 import pytesseract
 
-pytesseract.pytesseract.tesseract_cmd = r'C:\\Users\\ANIKET INAMDAR\\AppData\\Local\\Programs\\Tesseract-OCR\\tesseract.exe'
+pytesseract.pytesseract.tesseract_cmd = r'tesseract\\Tesseract-OCR\\tesseract.exe'
 
 img = cv2.imread("images/work2.jpg")
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
