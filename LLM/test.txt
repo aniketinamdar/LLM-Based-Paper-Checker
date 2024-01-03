@@ -1,0 +1,28 @@
+# def GetLlamaResponse(q_bank, a_key):
+    # llm = CTransformers(model='LLM/model/llama-2-7b-chat.ggmlv3.q8_0.bin', 
+    #                     model_type='llama',
+    #                     config={'max_new_tokens':256,
+    #                             'temperature':0.01})
+#     prompt = "{q_bank} is the answer given by the student. Match the similarity with {a_key} and give the student according marks on the scale of 0-100 for the same.".format(q_bank=q_bank, a_key=a_key)
+    
+#     response = llm(prompt)
+#     return response
+
+
+
+
+# def GetLlamaResponse(q_bank, a_key):
+#     llm = CTransformers(model='LLM/model/llama-2-7b-chat.ggmlv3.q8_0.bin', 
+#                         model_type='llama',
+#                         config={'max_new_tokens':256,
+#                                 'temperature':0.01})
+#     template =  """
+#     {q_bank} is the answer given by the student. Match the similarity with {a_key} and give the student according marks on the scale of 0-100 for the same.
+#     """
+
+#     prompt = PromptTemplate(input_variables=["q_bank","a_key"],
+#                             template=template)
+    
+#     response = llm(prompt.format(q_bank=q_bank, a_key=a_key))
+#     print(response)
+#     return response
